@@ -138,17 +138,20 @@ main {
 }
 
 #exchange-table {
-    display: grid;
-    grid-row-gap: 10px;
-    width: 216px;
-    /* min-width: 216px;
-    max-width: 410px; */
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 #exchange-table h3 {
     font-size: 1.8rem;
+}
+.exchange-table__coins h3 {
     color: var(--bitcoin-orange);
+}
+.exchange-table__comission h3 {
+    color: var(--secondary-blue);
 }
 
 #exchange-table .table-container {
@@ -159,39 +162,49 @@ main {
     padding: 12px;
 }
 
-.table-container__coin {
-    display: grid;
+.exchange-table__comission .table-container__row {
+    grid-template-columns: 120px 46px;
+}
+.exchange-table__coins .table-container__row {
     grid-template-columns: 120px 46px 26px;
+
+}
+.table-container__row {
+    display: grid;
     font-size: 1.6rem;
     color: var(--warm-black);
     align-items: center;
     justify-items: start;
 }
-.table-container__coin p:first-child {
+.table-container__row p:first-child {
     opacity: 62%;
 }
-.table-container__coin p:nth-child(2) {
+.table-container__row p:nth-child(2) {
     opacity: 85%;
 }
 
-.table-container__coin div {
+.table-container__row div {
     background: url('/assets/icons/trending-down.svg') center/cover no-repeat; 
     width: 12px;
     height: 12px;
     margin-left: 10px;
 }
-.table-container__coin .up-arrow {
+.table-container__row .up-arrow {
     background: url('/assets/icons/trending-up.svg') center/cover no-repeat; 
 }
 
+.exchange-table__comission .exchange-table__update {
+    background-color: #e3f4fe;
+}
+.exchange-table__coins .exchange-table__update {
+    background-color: #fde5cd;
+}
 .exchange-table__update {
     font-size: 1.4rem;
     margin: 0 auto;
     margin-top: 10px;
     padding: 5px;
-    background-color: #fde5cd;
     border-radius: 7px;
-    
 }
 
 .exchange-table__update span {
