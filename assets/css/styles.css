@@ -262,14 +262,15 @@ main {
 }
 
 .product-detail__cards-container {
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product-detail__card {
     width: 90%;
     min-width: 288px;
-    max-width: 400px;
-    height: 150px;
+    max-width: 384px;
+    min-height: 150px;
     margin: 15px auto;
     padding: 16px;
     background-color: var(--warm-black);
@@ -282,11 +283,20 @@ main {
     width: 24px;
     height: 24px;
     margin-bottom: 10px;
+    margin-left: 1px;
 } 
 .clock {
     background: url('/assets/icons/clock.svg') center/cover no-repeat;
 }
-
+.eye {
+    background: url('/assets/icons/eye.svg') center/cover no-repeat;
+}
+.dollar-sign {
+    background: url('/assets/icons/dollar-sign.svg') center/cover no-repeat;
+}
+.check-circle {
+    background: url('/assets/icons/check-circle.svg') center/cover no-repeat;
+}
 
 .product-detail__card-title {
     margin-bottom: 12px;
