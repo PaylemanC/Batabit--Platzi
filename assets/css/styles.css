@@ -117,7 +117,7 @@ main {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 38px;
     background: url('/assets/img/Bitcoin.svg') center/cover no-repeat;
 }
 
@@ -129,10 +129,71 @@ main {
     color: var(--black);
 }
 
-#main-exchange p {
+#main-exchange .main-exchange__title p {
     margin-bottom: 24px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
     color: #757575;
+}
+
+#exchange-table {
+    display: grid;
+    grid-row-gap: 10px;
+    width: 216px;
+    /* min-width: 216px;
+    max-width: 410px; */
+    margin: 0 auto;
+}
+
+#exchange-table h3 {
+    font-size: 1.8rem;
+    color: var(--bitcoin-orange);
+}
+
+#exchange-table .table-container {
+    display: grid;
+    grid-row-gap: 16px;
+    background-color: var(--just-white);
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.table-container__coin {
+    display: grid;
+    grid-template-columns: 120px 46px 26px;
+    font-size: 1.6rem;
+    color: var(--warm-black);
+    align-items: center;
+    justify-items: start;
+}
+.table-container__coin p:first-child {
+    opacity: 62%;
+}
+.table-container__coin p:nth-child(2) {
+    opacity: 85%;
+}
+
+.table-container__coin div {
+    background: url('/assets/icons/trending-down.svg') center/cover no-repeat; 
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+}
+.table-container__coin .up-arrow {
+    background: url('/assets/icons/trending-up.svg') center/cover no-repeat; 
+}
+
+.exchange-table__update {
+    font-size: 1.4rem;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #fde5cd;
+    border-radius: 7px;
+    
+}
+
+.exchange-table__update span {
+    font-weight: bold;
 }
