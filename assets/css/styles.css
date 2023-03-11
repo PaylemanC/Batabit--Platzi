@@ -100,7 +100,7 @@ main {
 #main-exchange {
     width: 100%;
     height: auto;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -145,12 +145,22 @@ main {
 
 #exchange-table h3 {
     font-size: 1.8rem;
+    text-align: initial;
+    margin-left: 12px;
 }
 .exchange-table__coins h3 {
     color: var(--bitcoin-orange);
 }
 .exchange-table__comission h3 {
     color: var(--secondary-blue);
+}
+
+.exchange-table__coins, .exchange-table__comission{
+    width: 70%;
+    max-width: 330px;
+    min-width: 235px;
+    margin: 12px 24px; 
+    font-family: "Inter", sans-serif;
 }
 
 #exchange-table .table-container {
@@ -162,18 +172,17 @@ main {
 }
 
 .exchange-table__comission .table-container__row {
-    grid-template-columns: 120px 46px;
+    grid-template-columns: 50% 50%;
 }
 .exchange-table__coins .table-container__row {
-    grid-template-columns: 120px 46px 26px;
-
+    grid-template-columns: 50% 25% 25%;
 }
 .table-container__row {
     display: grid;
     font-size: 1.6rem;
     color: var(--warm-black);
     align-items: center;
-    justify-items: start;
+    justify-items: center;
 }
 .table-container__row p:first-child {
     opacity: 62%;
@@ -184,8 +193,8 @@ main {
 
 .table-container__row div {
     background: url('/assets/icons/trending-down.svg') center/cover no-repeat; 
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     margin-left: 10px;
 }
 .table-container__row .up-arrow {
@@ -204,6 +213,7 @@ main {
     margin-top: 10px;
     padding: 5px;
     border-radius: 7px;
+    font-weight: 300;
 }
 
 .exchange-table__update span {
