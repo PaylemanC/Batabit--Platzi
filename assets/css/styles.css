@@ -102,7 +102,7 @@ main {
 #main-exchange {
     width: 100%;
     height: auto;
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -118,7 +118,7 @@ main {
     width: 200px;
     height: 200px;
     margin: 0 auto;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     background: url('/assets/img/Bitcoin.svg') center/cover no-repeat;
 }
 
@@ -384,6 +384,13 @@ main {
     font-family: "Inter", sans-serif;
 }
 
+.anual {
+    border: 2px solid var(--bitcoin-orange);
+}
+.mensual, .duo {
+    border: 2px solid var(--grey)
+}
+
 .plans-container__card > p {
     position: absolute;
     width: 120px;
@@ -459,6 +466,9 @@ main {
 .duo button {
     background-color: #d9d9d9;
     border: 2px solid var(--soft-grey);
+}
+button {
+    cursor: pointer;
 }
 
 .plans-container__card-info button span {
