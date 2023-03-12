@@ -360,13 +360,23 @@ main {
     color: var(--soft-grey);
 }
 
+.plans-container {
+    display: flex;
+    padding: 0 36px;
+    height: 353px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity; 
+}
+
 .plans-container__card {
+    scroll-snap-align: center;
     position: relative; 
     width: 70%;
     min-width: 230px;
     max-width: 280px;
     height: 268px;
-    margin: 16px auto 0;
+    margin: 16px 22px 0;
     padding: 0 24px;
     background-color: var(--just-white);
     border-radius: 10px;
