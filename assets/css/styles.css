@@ -103,7 +103,7 @@ main {
     width: 100%;
     height: auto;
     padding-top: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
@@ -149,6 +149,7 @@ main {
     font-size: 1.8rem;
     text-align: initial;
     margin-left: 12px;
+    margin-bottom: 6px;
 }
 .exchange-table__coins h3 {
     color: var(--bitcoin-orange);
@@ -227,7 +228,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: auto;
-    padding: 20px 10px;
+    padding: 20px 10px 40px;
     background-color: var(--black);
 }
 
@@ -245,7 +246,7 @@ main {
     min-width: 288px;
     height: auto;
     margin: 0 auto;
-    margin-top: 38px;
+    margin-top: 32px;
     text-align: center;
 }
 
@@ -345,14 +346,14 @@ main {
 }
 
 .plans__description h2 {
-    padding-top: 66px;
+    padding-top: 45px;
     font-size: 2.4rem;
     line-height: 2.6rem;
     color: var(--black);
 }
 
 .plans__description p {
-    padding: 24px 0;
+    padding: 24px 0 34px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
@@ -375,7 +376,7 @@ main {
     min-width: 230px;
     max-width: 280px;
     height: 268px;
-    margin: 16px 22px 0;
+    margin: 16px 0 0 26px;
     padding: 0 24px;
     background-color: var(--just-white);
     border-radius: 10px;
