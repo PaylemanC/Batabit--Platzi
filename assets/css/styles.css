@@ -364,3 +364,84 @@ main {
     line-height: 1.8rem;
     color: var(--soft-grey);
 }
+
+.plans-container__card {
+    position: relative; 
+    width: 70%;
+    min-width: 230px;
+    max-width: 280px;
+    height: 268px;
+    margin: 16px auto 0;
+    padding: 0 24px;
+    background-color: var(--just-white);
+    border-radius: 10px;
+    box-shadow: 8px 20px 60px #bebebe, -8px -20px 60px #ffffff;
+    font-family: "Inter", sans-serif;
+}
+
+.plans-container__card > p {
+    position: absolute;
+    width: 120px;
+    height: 34px;
+    top: -16px;
+    left: calc(50% - 58px);
+    font-size: 1.4rem;
+    padding: 7px;
+    font-weight: 500;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--just-white);
+}
+
+.plans-container__card-info h3 {
+    padding-top: 35px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.card-info__price {
+    color: black;
+    padding: 16px 10px 5px 0px;  /*  18px   */
+    font-size: 5.2rem;
+    font-weight: bolder;
+    letter-spacing: -4px;
+}
+.card-info__price::first-letter {
+    font-size: 1.6rem;
+    font-weight: 500;
+    vertical-align: text-top;
+}
+
+.card-info__saving {
+    font-size: 1.4rem;
+    color: var(--soft-grey);
+}
+.card-info__saving span {
+    font-weight: bold;
+}
+
+.plans-container__card-info button {
+    width: 90%;
+    height: 48px;
+    margin: 10px;
+    margin-top: 20px;
+    background-color: var(--soft-orange);
+    border-radius: 4px;
+    border: 2px solid var(--bitcoin-orange);
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 15px 16px; */
+}
+
+.plans-container__card-info button span {
+    width: 20px;
+    height: 20px;
+    background: url('/assets/icons/orange-right-arrow.svg');
+    margin-left: 4px;
+}
