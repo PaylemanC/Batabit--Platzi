@@ -7,18 +7,20 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
     --bitcoin-orange: #f7931a;
     --soft-orange: #ffe9d5;
     --secondary-blue: #1a9af7;
-    --soft-blue: #e7f5ff;
+    --soft-blue: #e3f4fe;
     --warm-black: #282623;
     --black: #201e1c;
     --grey: #bababa;
     --off-white: #faf8f7;
     --just-white: #fff;
+    --soft-grey: #808080;
 }
 
 header {
@@ -133,7 +135,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
-    color: #757575;
+    color: var(--soft-grey);
 }
 
 #exchange-table {
@@ -202,10 +204,10 @@ main {
 }
 
 .exchange-table__comission .exchange-table__update {
-    background-color: #e3f4fe;
+    background-color: var(--soft-blue);
 }
 .exchange-table__coins .exchange-table__update {
-    background-color: #fde5cd;
+    background-color: var(--soft-orange)
 }
 .exchange-table__update {
     font-size: 1.4rem;
@@ -257,7 +259,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #808080;
+    color: var(--soft-grey);
     margin: 24px 0;
 }
 
@@ -310,7 +312,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: #808080;
+    color: var(--soft-grey);
 }
 
 .bitcon-img-container {
@@ -327,4 +329,38 @@ main {
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
+}
+
+
+
+
+
+
+#plans {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.plans__description {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.plans__description h2 {
+    padding-top: 66px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans__description p {
+    padding: 24px 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-grey);
 }
