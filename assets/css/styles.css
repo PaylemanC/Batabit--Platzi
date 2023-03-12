@@ -331,11 +331,6 @@ main {
     color: var(--just-white);
 }
 
-
-
-
-
-
 #plans {
     width: 100%;
     min-width: 320px;
@@ -388,9 +383,17 @@ main {
     font-size: 1.4rem;
     padding: 7px;
     font-weight: 500;
-    background-color: var(--bitcoin-orange);
     border-radius: 8px;
     color: var(--just-white);
+}
+.anual > p {
+    background-color: var(--bitcoin-orange);
+}
+.mensual > p {
+    background-color: var(--secondary-blue);
+}
+.duo > p {
+    background-color: var(--soft-grey);
 }
 
 .plans-container__card-info h3 {
@@ -427,16 +430,25 @@ main {
     height: 48px;
     margin: 10px;
     margin-top: 20px;
-    background-color: var(--soft-orange);
     border-radius: 4px;
-    border: 2px solid var(--bitcoin-orange);
     font-size: 1.4rem;
     font-weight: bold;
     color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 15px 16px; */
+}
+.anual button {
+    background-color: var(--soft-orange);
+    border: 2px solid var(--bitcoin-orange);
+}
+.mensual button {
+    background-color: var(--soft-blue);
+    border: 2px solid var(--secondary-blue);
+}
+.duo button {
+    background-color: #d9d9d9;
+    border: 2px solid var(--soft-grey);
 }
 
 .plans-container__card-info button span {
