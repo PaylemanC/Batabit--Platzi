@@ -21,6 +21,9 @@ html {
     --off-white: #faf8f7;
     --just-white: #fff;
     --soft-grey: #808080;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
 }
 
 header {
@@ -61,9 +64,9 @@ header img {
 
 .header__title-container p {
     margin: 25px 0;
-    font-size: 1.4rem;
+    font-size: var(--sm);
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: var(--lg);
     color: var(--soft-orange);
 }
 
@@ -79,7 +82,7 @@ header img {
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
     border: none;
     border-radius: 4px;
-    font-size: 1.4rem;
+    font-size: var(--sm);
     font-weight: bold;
     text-decoration: none;
     color: var(--black);
@@ -132,7 +135,7 @@ main {
 
 #main-exchange .main-exchange__title p {
     margin-bottom: 24px;
-    font-size: 1.4rem;
+    font-size: var(--sm);
     font-weight: 500;
     line-height: 1.6rem;
     color: var(--soft-grey);
@@ -146,7 +149,7 @@ main {
 }
 
 #exchange-table h3 {
-    font-size: 1.8rem;
+    font-size: var(--lg);
     text-align: initial;
     margin-left: 12px;
     margin-bottom: 6px;
@@ -182,7 +185,7 @@ main {
 }
 .table-container__row {
     display: grid;
-    font-size: 1.6rem;
+    font-size: var(--md);
     color: var(--warm-black);
     align-items: center;
     justify-items: center;
@@ -211,7 +214,7 @@ main {
     background-color: var(--soft-orange)
 }
 .exchange-table__update {
-    font-size: 1.4rem;
+    font-size: var(--sm);
     margin: 0 auto;
     margin-top: 10px;
     padding: 5px;
@@ -257,9 +260,9 @@ main {
 }
 
 .product-detail__description p {
-    font-size: 1.4rem;
+    font-size: var(--sm);
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: var(--lg);
     color: var(--soft-grey);
     margin: 24px 0;
 }
@@ -303,16 +306,16 @@ main {
 
 .product-detail__card-title {
     margin-bottom: 12px;
-    font-size: 1.8rem;
+    font-size: var(--lg);
     font-weight: bold;
-    line-height: 1.8rem;
+    line-height: var(--lg);
     color: var(--just-white);
 }
 
 .product-detail__card-body {
-    font-size: 1.4rem;
+    font-size: var(--sm);
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: var(--lg);
     color: var(--soft-grey);
 }
 
@@ -354,9 +357,9 @@ main {
 
 .plans__description p {
     padding: 24px 0 34px;
-    font-size: 1.4rem;
+    font-size: var(--sm);
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: var(--lg);
     color: var(--soft-grey);
 }
 
@@ -397,7 +400,7 @@ main {
     height: 34px;
     top: -16px;
     left: calc(50% - 58px);
-    font-size: 1.4rem;
+    font-size: var(--sm);
     padding: 7px;
     font-weight: 500;
     border-radius: 8px;
@@ -415,9 +418,9 @@ main {
 
 .plans-container__card-info h3 {
     padding-top: 35px;
-    font-size: 1.6rem;
+    font-size: var(--md);
     font-weight: 600;
-    line-height: 1.8rem;
+    line-height: var(--lg);
     color: black;
 }
 
@@ -429,13 +432,13 @@ main {
     letter-spacing: -4px;
 }
 .card-info__price::first-letter {
-    font-size: 1.6rem;
+    font-size: var(--md);
     font-weight: 500;
     vertical-align: text-top;
 }
 
 .card-info__saving {
-    font-size: 1.4rem;
+    font-size: var(--sm);
     color: var(--soft-grey);
 }
 .card-info__saving span {
@@ -448,7 +451,7 @@ main {
     margin: 10px;
     margin-top: 20px;
     border-radius: 4px;
-    font-size: 1.4rem;
+    font-size: var(--sm);
     font-weight: bold;
     color: var(--black);
     display: flex;
@@ -494,13 +497,13 @@ footer section {
 }
 
 .footer__left ul {
-    font-size: 1.4rem;
+    font-size: var(--sm);
     font-weight: 500;
-    line-height: 1.8rem;
+    line-height: var(--lg);
     list-style: none;
 }
 .footer__left .linkedin {
-    font-size: 1.6rem;
+    font-size: var(--md);
     line-height: 2.5rem;
 }
 
