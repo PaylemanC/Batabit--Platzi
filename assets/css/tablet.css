@@ -12,7 +12,7 @@
     margin: 0;
 }
 
-.footer-right img {
+.footer__right img {
     width: 100px;
 }
 
@@ -23,4 +23,8 @@
 
 .bitcon-img-container {
     background: url('../img/bitcoinbaby2x.jpg') center/cover no-repeat;
+}
+
+header .title__p, #main-exchange .main-exchange__title .title__p, #product-detail .title__p, #plans .title__p {
+    font-size: var(--md);
 }
