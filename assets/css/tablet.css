@@ -20,3 +20,7 @@
     font-size: 3.6rem;
     line-height: 4.6rem;
 }
+
+.bitcon-img-container {
+    background: url('../img/bitcoinbaby2x.jpg') center/cover no-repeat;
+}
